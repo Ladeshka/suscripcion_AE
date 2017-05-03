@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrapAE/css/bootstrap.min.css" />
+    <title>AMERICA ECONOMIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="height:10px">
+        </div>
+        <nav class="navbar navbar-inverse  navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                        <span class="sr-only">Desplegar / Ocultar Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="imagenesAE/logo_AE_01.png" alt="Logo" class="navbar-brand" />
+                </div>
+                <!-- Inicia Menu -->
+                <center>
+                    <div class="collapse navbar-collapse" id="navegacion-fm">
+                        <ul class="nav navbar-nav">
+                            <li class="menu"><a href="clienteAE_01.html">Cliente</a></li>
+                            <li class="menu"><a href="contratoAE_01.html">Contrato</a></li>
+                            <li class="menu"><a href="zonaAE_01.html">Zona</a></li>
+                            <li class="menu"><a href="usuarioAE_01.html">Usuario</a></li>
+                        </ul>
+                        <form action="" class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <label class="menu" style="margin-top:6px">Nombre Usuario</label>
+                            </div>
+                            <button id="btnSalir" type="submit" class="btn btn-danger" style="font-family:Verdana; font-size:16px">Salir</button>
+                        </form>
+                    </div>
+                </center>
+            </div>
+            <div class="container" style="height:15px; width:100%;background-color:#233446">
+            </div>
+        </nav>
+    </header>
+    <form>
+        <div class="table-responsive">
+            <center class="subtitulo" style="color:#233446;">REGISTRO CONTRATO</center>
+            <center>
+                <table class="table-responsive">
+
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Cliente :</td>
+                        <td style="width: 30%;">
+                            <select id=¨"listCliente" class="form-control col-xs-9 ">
+                                <option value="1" disabled="disabled" selected="selected">Seleccione Cliente</option>
+                                <option value="2">Pedro Perez Quispe</option>
+                            </select>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Dirección :</td>
+                        <td style="width: 30%; font-size:15px;">
+                            <input id="txtDireccionCtto" type="text" class="form-control col-xs-9" style="width: 70%;" placeholder="Ingrese Direccion Revista-Cliente" />
+                            <input id="txtPisoCtto" type="text" class="form-control col-xs-9" style="width: 30%;" placeholder="Ingrese Nro. Piso" />
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Tipo :</td>
+                        <td style="width: 30%;">
+                            <select id=¨"listTipoCtto" class="form-control col-xs-9 ">
+                                <option value="1" disabled="disabled" selected="selected">Seleccione Tipo Contrato</option>
+                                <option value="2">Renovacion</option>
+                            </select>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Fecha Inicio :</td>
+                        <td style="width: 30%;">
+                            <div class="input-group date" id="calendario1">
+                                <input type='text' id="txtFechaInicioCtto" class="form-control col-xs-9" readonly=readonly />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Fecha Fin :</td>
+                        <td style="width: 30%;">
+                            <div class="input-group date" id="calendario2">
+                                <input type='text' id="txtFechaFinCtto" class="form-control col-xs-9" readonly=readonly />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Tipo Pago :</td>
+                        <td style="width: 30%;">
+                            <center>
+                                <label class="alerta">
+                                    <input type="radio" name="opcion" id="opEfectivo" value="opEfectivo" checked=checked />
+                                    Efectivo
+                                </label>
+                                <label class="alerta">
+                                    <input type="radio" name="opcion" id="opCheque" value="opCheque" />
+                                    Cheque
+                                </label>
+                                <label class="alerta">
+                                    <input type="radio" name="opcion" id="opCredito" value="opCredito" />
+                                    Tarjeta Credito
+                                </label>
+                            </center>
+                            <input id="txtBancoCtto" type="text" class="form-control col-xs-9" style="width: 50%;" placeholder="Ingrese Numero Banco" />
+                            <input id="txtNumeroCtto" type="text" class="form-control col-xs-9" style="width: 50%;" placeholder="Ingrese Banco" />
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Precio :</td>
+                        <td style="width: 30%;">
+                            <input id="txtPrecioCtto" type="text" class="form-control col-xs-9" placeholder="Ingrese Precio Contrato" />
+                            <center><label id="alrtPrecioCtto" class="alerta">alerta</label></center>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%">
+						<table class="table-responsive">
+                                <tr>
+								<td style="width: 40%;">
+                            		<button type="submit" id="btnModificar" class="btn btn-primary" style="font-family:Verdana; font-size:16px">Modificar</button>
+                       			</td>
+								<td style="width: 20%"></td>
+                                <td style="width: 40%;">
+                           			<button type="submit" id="btnGuardar" class="btn btn-primary" style="font-family:Verdana; font-size:16px">Guardar</button>
+                        		</td>                                    
+                                </tr>
+                            </table> 
+							</td>
+                        <td style="width: 15%"></td>
+                    </tr>
+
+                </table>
+
+            </center>
+
+        </div>
+
+
+    </form>
+    <script src="bootstrapAE/js/jquery.js"></script>
+    <script src="bootstrapAE/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrapAE/js/moment.min.js"></script>
+    <script src="bootstrapAE/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="bootstrapAE/js/bootstrap-datetimepicker.es.js"></script>
+    <script type="text/javascript">
+        $('#calendario1').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm'
+        });
+        $('#calendario1').data("DateTimePicker").show();
+        $('#calendario2').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm'
+        });
+        $('#calendario2').data("DateTimePicker").show();
+    </script>
+</body>
+</html>

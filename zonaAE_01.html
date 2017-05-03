@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrapAE/css/bootstrap.min.css" />
+    <title>AMERICA ECONOMIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="container" style="height:10px">
+        </div>
+        <nav class="navbar navbar-inverse  navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                        <span class="sr-only">Desplegar / Ocultar Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="imagenesAE/logo_AE_01.png" alt="Logo" class="navbar-brand" />
+                </div>
+                <!-- Inicia Menu -->
+                <center>
+                    <div class="collapse navbar-collapse" id="navegacion-fm">
+                        <ul class="nav navbar-nav">
+                            <li class="menu"><a href="clienteAE_01.html">Cliente</a></li>
+                            <li class="menu"><a href="contratoAE_01.html">Contrato</a></li>
+                            <li class="menu"><a href="zonaAE_01.html">Zona</a></li>
+                            <li class="menu"><a href="usuarioAE_01.html">Usuario</a></li>
+                        </ul>
+                        <form action="" class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <label class="menu" style="margin-top:6px">Nombre Usuario</label>
+                            </div>
+                            <button id="btnSalir" type="submit" class="btn btn-danger" style="font-family:Verdana; font-size:16px">Salir</button>
+                        </form>
+                    </div>
+                </center>
+            </div>
+            <div class="container" style="height:15px; width:100%;background-color:#233446">
+            </div>
+        </nav>
+    </header>
+    <form>
+        <div class="table-responsive">
+            <center class="subtitulo" style="color:#233446;">REGISTRO DE ZONA</center>
+            <center>
+                <table class="table-responsive">
+
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Departamento :</td>
+                        <td style="width: 30%;">
+                            <select id=¨"listDepartamento" class="form-control col-xs-9 ">
+                                <option value="0" disabled="disabled" selected="selected">Seleccione Departamento Zona</option>
+                                <option value="1">La Paz</option>
+                            </select>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%;"></td>
+                        <td style="width: 20%; text-align: right; font-size:15px;">Nombre :</td>
+                        <td style="width: 30%;">
+                            <input id="txtNombreZ" type="text" class="form-control col-xs-9" placeholder="Ingrese Nombre Zona" />
+                            <center><label id="alrtNombreZ" class="alerta">alerta</label></center>
+                        </td>
+                        <td style="width: 15%;"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%"></td>
+                        <td style="width: 15%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 5%; height: 11px"></td>
+                        <td style="width: 20%"></td>
+                        <td style="width: 30%">
+						<table class="table-responsive">
+                                <tr>
+								<td style="width: 40%;">
+                            		<button type="submit" id="btnModificar" class="btn btn-primary" style="font-family:Verdana; font-size:16px">Modificar</button>
+                       			</td>
+								<td style="width: 20%"></td>
+                                <td style="width: 40%;">
+                           			<button type="submit" id="btnGuardar" class="btn btn-primary" style="font-family:Verdana; font-size:16px">Guardar</button>
+                        		</td>                                    
+                                </tr>
+                            </table> 
+							</td>
+                        <td style="width: 15%"></td>
+                    </tr>
+
+                </table>
+
+            </center>
+            <br />
+            <table class="table">
+                <tr>
+                    <td style="width: 10%; height: 11px"></td>
+                    <td style="width: 80%">
+                        <center>
+                            <table class="table table-hover table-bordered">
+                                <tr>
+                                    <td style="width: 30%; text-align: center" class="subtitulo">Zona</td>
+                                    <td style="width: 30%; text-align: center" class="subtitulo">Dirección</td>
+                                    <td style="width: 30%;text-align: center" class="subtitulo">Departamento</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 30%;"></td>
+                                    <td style="width: 30%;"></td>
+                                    <td style="width: 30%;"></td>
+                                </tr>
+                            </table>
+                        </center>
+                    </td>
+                    <td style="width: 10%"></td>
+                </tr>
+
+            </table>
+        </div>
+    </form>
+    <script src="bootstrapAE/js/jquery.js"></script>
+    <script src="bootstrapAE/js/bootstrap.min.js"></script>
+</body>
+</html>
